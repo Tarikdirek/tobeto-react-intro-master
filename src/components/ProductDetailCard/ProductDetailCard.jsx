@@ -19,8 +19,8 @@ export default function ProductDetailCard() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-4"></div>
-        <div className="col-4 m-4">
+        <div className="col-lg-3 col-md-6 col-12 mb-5"></div>
+        <div className="col-lg-3 col-md-6 col-12 mb-5">
           <div className="card">
             <img src={product.thumbnail} className="card-img-top" alt="..." />
             <div className="card-body">

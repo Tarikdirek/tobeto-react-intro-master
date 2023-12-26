@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 export default function ProductCard(props) {
 	return (
 		<div className="card">
+			
 			<img src={props.product.thumbnail} className="card-img-top" alt="..." />
 			<div className="card-body">
 				<h5 className="card-title">{props.product.title}</h5>
@@ -18,7 +19,7 @@ export default function ProductCard(props) {
 				</span>
 				<span>
 					<Link
-					to={`/product-detail/${props.product.id}`}
+					to={`/products/delete/${props.product.id}`}
 					className="btn btn-danger"
 				>
 					Delete
