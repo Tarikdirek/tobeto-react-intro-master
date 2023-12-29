@@ -1,12 +1,14 @@
 
+import React from "react";
 import { useState, useEffect } from "react";
 
 function Workshop() {
 
-    const [inputValue, setInputValue] = useState("");
-    const [todos, setTodos] = useState([]);
+
+    const [inputValue, setInputValue] = useState<string>("");
+    const [todos, setTodos] = useState<string[]>([]);
   
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
       setInputValue(e.target.value);
     };
   
@@ -15,7 +17,7 @@ function Workshop() {
       setInputValue("");
     };
   
-    const removeTodos = (index) => {
+    const removeTodos = (index:number) => {
       let updatedTodos = todos.filter((_,i)=> i !== index)
       setTodos(updatedTodos);
     }
